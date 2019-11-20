@@ -32,84 +32,84 @@ function MyDiff()
   endif
 endfunction
 
-"=======================×Ô¶¨ÒåÅäÖÃ========================================
+"=======================è‡ªå®šä¹‰é…ç½®========================================
 
 let mapleader=";"
 
-"ÉèÖÃÎÄ¼şµÄ´úÂëĞÎÊ½ utf8
+"è®¾ç½®æ–‡ä»¶çš„ä»£ç å½¢å¼ utf8
 set encoding=utf-8
 set termencoding=utf-8
 set fileencoding=utf-8
 set fileencodings=ucs-bom,utf-8,chinese,cp936
  
-"vimµÄ²Ëµ¥ÂÒÂë½â¾ö
+"vimçš„èœå•ä¹±ç è§£å†³
 source $VIMRUNTIME/delmenu.vim
 source $VIMRUNTIME/menu.vim
  
-"vimÌáÊ¾ĞÅÏ¢ÂÒÂëµÄ½â¾ö
+"vimæç¤ºä¿¡æ¯ä¹±ç çš„è§£å†³
 language messages zh_CN.utf-8
  
 filetype on
 filetype plugin indent on
-"colorscheme evening	"ÅäÉ«·½°¸
+"colorscheme evening	"é…è‰²æ–¹æ¡ˆ
 colorscheme desert
-set helplang=cn		"ÉèÖÃÖĞÎÄ°ïÖú
-set history=500		"±£ÁôÀúÊ·¼ÇÂ¼
-set guifont=Monaco:h10	"ÉèÖÃ×ÖÌåÎªMonaco£¬´óĞ¡10
-set tabstop=4		"ÉèÖÃtabµÄÌøÊı
+set helplang=cn		"è®¾ç½®ä¸­æ–‡å¸®åŠ©
+set history=500		"ä¿ç•™å†å²è®°å½•
+set guifont=Monaco:h10	"è®¾ç½®å­—ä½“ä¸ºMonacoï¼Œå¤§å°10
+set tabstop=4		"è®¾ç½®tabçš„è·³æ•°
 set expandtab
-set backspace=2 	"ÉèÖÃÍË¸ñ¼ü¿ÉÓÃ
-"set nu! 		"ÉèÖÃÏÔÊ¾ĞĞºÅ
-set wrap 		"ÉèÖÃ×Ô¶¯»»ĞĞ
-"set nowrap 		"ÉèÖÃ²»×Ô¶¯»»ĞĞ
-set linebreak 		"Õû´Ê»»ĞĞ£¬Óë×Ô¶¯»»ĞĞ´îÅäÊ¹ÓÃ
-"set list 		"ÏÔÊ¾ÖÆ±í·û
-set autochdir 		"×Ô¶¯ÉèÖÃµ±Ç°Ä¿Â¼ÎªÕıÔÚ±à¼­µÄÄ¿Â¼
-set hidden 		"×Ô¶¯Òş²ØÃ»ÓĞ±£´æµÄ»º³åÇø£¬ÇĞ»»bufferÊ±²»¸ø³ö±£´æµ±Ç°bufferµÄÌáÊ¾
-set scrolloff=5 	"ÔÚ¹â±ê½Ó½üµ×¶Ë»ò¶¥¶ËÊ±£¬×Ô¶¯ÏÂ¹ö»òÉÏ¹ö
-"Toggle Menu and Toolbar 	"Òş²Ø²Ëµ¥À¸ºÍ¹¤¾ßÀ¸
+set backspace=2 	"è®¾ç½®é€€æ ¼é”®å¯ç”¨
+"set nu! 		"è®¾ç½®æ˜¾ç¤ºè¡Œå·
+set wrap 		"è®¾ç½®è‡ªåŠ¨æ¢è¡Œ
+"set nowrap 		"è®¾ç½®ä¸è‡ªåŠ¨æ¢è¡Œ
+set linebreak 		"æ•´è¯æ¢è¡Œï¼Œä¸è‡ªåŠ¨æ¢è¡Œæ­é…ä½¿ç”¨
+"set list 		"æ˜¾ç¤ºåˆ¶è¡¨ç¬¦
+set autochdir 		"è‡ªåŠ¨è®¾ç½®å½“å‰ç›®å½•ä¸ºæ­£åœ¨ç¼–è¾‘çš„ç›®å½•
+set hidden 		"è‡ªåŠ¨éšè—æ²¡æœ‰ä¿å­˜çš„ç¼“å†²åŒºï¼Œåˆ‡æ¢bufferæ—¶ä¸ç»™å‡ºä¿å­˜å½“å‰bufferçš„æç¤º
+set scrolloff=5 	"åœ¨å…‰æ ‡æ¥è¿‘åº•ç«¯æˆ–é¡¶ç«¯æ—¶ï¼Œè‡ªåŠ¨ä¸‹æ»šæˆ–ä¸Šæ»š
+"Toggle Menu and Toolbar 	"éšè—èœå•æ å’Œå·¥å…·æ 
 "set guioptions-=m
 "set guioptions-=T
-set showtabline=2 	"ÉèÖÃÏÔÊÇÏÔÊ¾±êÇ©À¸
-set autoread 		"ÉèÖÃµ±ÎÄ¼şÔÚÍâ²¿±»ĞŞ¸Ä£¬×Ô¶¯¸üĞÂ¸ÃÎÄ¼ş
-set mouse=a 		"ÉèÖÃÔÚÈÎºÎÄ£Ê½ÏÂÊó±ê¶¼¿ÉÓÃ
-set nobackup 		"ÉèÖÃ²»Éú³É±¸·İÎÄ¼ş
-"set go=				"²»ÒªÍ¼ĞÎ°´Å¥
-set guioptions-=T           " Òş²Ø¹¤¾ßÀ¸
-"set guioptions-=m           " Òş²Ø²Ëµ¥À¸
+set showtabline=2 	"è®¾ç½®æ˜¾æ˜¯æ˜¾ç¤ºæ ‡ç­¾æ 
+set autoread 		"è®¾ç½®å½“æ–‡ä»¶åœ¨å¤–éƒ¨è¢«ä¿®æ”¹ï¼Œè‡ªåŠ¨æ›´æ–°è¯¥æ–‡ä»¶
+set mouse=a 		"è®¾ç½®åœ¨ä»»ä½•æ¨¡å¼ä¸‹é¼ æ ‡éƒ½å¯ç”¨
+set nobackup 		"è®¾ç½®ä¸ç”Ÿæˆå¤‡ä»½æ–‡ä»¶
+"set go=				"ä¸è¦å›¾å½¢æŒ‰é’®
+set guioptions-=T           " éšè—å·¥å…·æ 
+"set guioptions-=m           " éšè—èœå•æ 
  
 "===========================
-"²éÕÒ/Ìæ»»Ïà¹ØµÄÉèÖÃ
+"æŸ¥æ‰¾/æ›¿æ¢ç›¸å…³çš„è®¾ç½®
 "===========================
-set hlsearch "¸ßÁÁÏÔÊ¾²éÕÒ½á¹û
-set incsearch "ÔöÁ¿²éÕÒ
+set hlsearch "é«˜äº®æ˜¾ç¤ºæŸ¥æ‰¾ç»“æœ
+set incsearch "å¢é‡æŸ¥æ‰¾
  
 "===========================
-"×´Ì¬À¸µÄÉèÖÃ
+"çŠ¶æ€æ çš„è®¾ç½®
 "===========================
-set statusline=[%F]%y%r%m%*%=[Line:%l/%L,Column:%c][%p%%] "ÏÔÊ¾ÎÄ¼şÃû£º×ÜĞĞÊı£¬×ÜµÄ×Ö·ûÊı
-set ruler "ÔÚ±à¼­¹ı³ÌÖĞ£¬ÔÚÓÒÏÂ½ÇÏÔÊ¾¹â±êÎ»ÖÃµÄ×´Ì¬ĞĞ
+set statusline=[%F]%y%r%m%*%=[Line:%l/%L,Column:%c][%p%%] "æ˜¾ç¤ºæ–‡ä»¶åï¼šæ€»è¡Œæ•°ï¼Œæ€»çš„å­—ç¬¦æ•°
+set ruler "åœ¨ç¼–è¾‘è¿‡ç¨‹ä¸­ï¼Œåœ¨å³ä¸‹è§’æ˜¾ç¤ºå…‰æ ‡ä½ç½®çš„çŠ¶æ€è¡Œ
  
 "===========================
-"´úÂëÉèÖÃ
+"ä»£ç è®¾ç½®
 "===========================
-syntax enable "´ò¿ªÓï·¨¸ßÁÁ
-syntax on "´ò¿ªÓï·¨¸ßÁÁ
-set showmatch "ÉèÖÃÆ¥ÅäÄ£Ê½£¬Ïàµ±ÓÚÀ¨ºÅÆ¥Åä
-set smartindent "ÖÇÄÜ¶ÔÆë
-"set shiftwidth=4 "»»ĞĞÊ±£¬½»´íÊ¹ÓÃ4¸ö¿Õ¸ñ
-set autoindent "ÉèÖÃ×Ô¶¯¶ÔÆë
-set ai! "ÉèÖÃ×Ô¶¯Ëõ½ø
-"set cursorcolumn "ÆôÓÃ¹â±êÁĞ
-set cursorline	"ÆôÓÃ¹â±êĞĞ
-set guicursor+=a:blinkon0 "ÉèÖÃ¹â±ê²»ÉÁË¸
+syntax enable "æ‰“å¼€è¯­æ³•é«˜äº®
+syntax on "æ‰“å¼€è¯­æ³•é«˜äº®
+set showmatch "è®¾ç½®åŒ¹é…æ¨¡å¼ï¼Œç›¸å½“äºæ‹¬å·åŒ¹é…
+set smartindent "æ™ºèƒ½å¯¹é½
+"set shiftwidth=4 "æ¢è¡Œæ—¶ï¼Œäº¤é”™ä½¿ç”¨4ä¸ªç©ºæ ¼
+set autoindent "è®¾ç½®è‡ªåŠ¨å¯¹é½
+set ai! "è®¾ç½®è‡ªåŠ¨ç¼©è¿›
+"set cursorcolumn "å¯ç”¨å…‰æ ‡åˆ—
+set cursorline	"å¯ç”¨å…‰æ ‡è¡Œ
+set guicursor+=a:blinkon0 "è®¾ç½®å…‰æ ‡ä¸é—ªçƒ
 set fdm=indent "
 set noundofile
 set nobackup
 set noswapfile
  
  
-"²å¼ş¹ÜÀí
+"æ’ä»¶ç®¡ç†
 set rtp+=$vim\vimfiles\bundle\Vundle.vim\
 call vundle#begin('$VIM/vimfiles/bundle/')
 Plugin 'VundleVim/Vundle.vim'
@@ -123,5 +123,17 @@ call vundle#end()
 
 let g:ctrlp_map = '<c-p>' 
 let g:ctrlp_cmd = 'CtrlP'
-" ÉèÖÃ¹ıÂË²»½øĞĞ²éÕÒµÄºó×ºÃû 
+" è®¾ç½®è¿‡æ»¤ä¸è¿›è¡ŒæŸ¥æ‰¾çš„åç¼€å 
 let g:ctrlp_custom_ignore = '\v[\/]\.(git|hg|svn|pyc)$'
+
+" alt+numåˆ‡æ¢tab
+:nn <M-1> 1gt
+:nn <M-2> 2gt
+:nn <M-3> 3gt
+:nn <M-4> 4gt
+:nn <M-5> 5gt
+:nn <M-6> 6gt
+:nn <M-7> 7gt
+:nn <M-8> 8gt
+:nn <M-9> 9gt
+:nn <M-0> :tablast<CR
